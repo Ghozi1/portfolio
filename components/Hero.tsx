@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-[#0F172A] text-white flex items-center justify-center px-6">
+    <section className="min-h-screen pt-5 bg-[#0F172A] text-white flex items-center justify-center px-6">
 
       <div className="max-w-4xl text-center">
 
@@ -12,7 +12,7 @@ export default function Hero() {
           ● Available for Opportunities
         </div>
 
-        <h1 className="mt-8 text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-white via-slate-200 to-blue-400 bg-clip-text text-transparent">
+        <h1 className="mt-8 text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-white via-slate-200 to-blue-400 bg-clip-text text-transparent">
           Muhammad Ghozi Al Ghifari
         </h1>
 
@@ -20,11 +20,33 @@ export default function Hero() {
           Junior Database Administrator
         </h2>
 
-        <p className="mt-3 text-lg text-slate-400">
-          PostgreSQL • MySQL • SQL Server
-        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <span className="rounded-full bg-slate-800 px-4 py-2 text-sm border border-slate-700">
+                PostgreSQL
+            </span>
 
-        <p className="mx-auto mt-8 max-w-3xl leading-8 text-slate-400">
+            <span className="rounded-full bg-slate-800 px-4 py-2 text-sm border border-slate-700">
+                MySQL
+            </span>
+
+            <span className="rounded-full bg-slate-800 px-4 py-2 text-sm border border-slate-700">
+                SQL Server
+            </span>
+
+            <span className="rounded-full bg-slate-800 px-4 py-2 text-sm border border-slate-700">
+                Linux
+            </span>
+
+            <span className="rounded-full bg-slate-800 px-4 py-2 text-sm border border-slate-700">
+                Docker
+            </span>
+
+            <span className="rounded-full bg-slate-800 px-4 py-2 text-sm border border-slate-700">
+                Git
+            </span>
+        </div>
+
+        <p className="mx-auto mt-6 max-w-2xl leading-8 text-slate-400">
           Passionate about database management,
           SQL optimization, database design,
           and building reliable data solutions.
