@@ -7,6 +7,10 @@ export default function Home() {
 
       <main className="min-h-screen bg-[#0F172A] text-white flex items-center justify-center">
         <div className="text-center">
+          <p className="text-slate-500 uppercase tracking-[0.3em] text-sm mb-4">
+            Portfolio
+          </p>
+          
           <div className="inline-block px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-sm mb-6">
             Available for Opportunities
           </div>
