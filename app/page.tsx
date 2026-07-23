@@ -7,7 +7,10 @@ export default function Home() {
 
       <main className="min-h-screen bg-[#0F172A] text-white flex items-center justify-center">
         <div className="text-center">
-
+          <div className="inline-block px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-sm mb-6">
+            Available for Opportunities
+          </div>
+          
           <h1 className="text-5xl font-bold">
             Muhammad Ghozi Al Ghifari
           </h1>
