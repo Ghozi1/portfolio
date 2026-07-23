@@ -27,7 +27,7 @@ export default function Home() {
             Front End Developer
           </p>
 
-          <p className="mt-6 max-w-2xl mx-auto text-slate-400 leading-8">
+          <p className="mt-8 max-w-3xl mx-auto text-slate-400 leading-8">
             Passionate about database management, SQL optimization,
             database design, and building reliable data solutions.
             Currently developing my skills in PostgreSQL, MySQL,
