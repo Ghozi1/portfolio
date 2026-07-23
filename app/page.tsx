@@ -11,7 +11,7 @@ export default function Home() {
             Available for Opportunities
           </div>
           
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-white via-slate-200 to-blue-400 bg-clip-text text-transparent">
             Muhammad Ghozi Al Ghifari
           </h1>
 
