@@ -87,7 +87,7 @@ export default function Contact() {
 
             <div className="flex gap-4">
             <a
-                href="https://drive.google.com/file/d/1FZG32MqI7yk78Yq83TS4s3RIs98uAT0u/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MU5UdpLXGeAv3_qMJpzWF7Zd6_7UgqFR/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg border border-blue-500 px-5 py-3 text-blue-400 hover:bg-blue-500 hover:text-white transition"
@@ -96,7 +96,7 @@ export default function Contact() {
             </a>
 
             <a
-                href="https://drive.google.com/file/d/1FZG32MqI7yk78Yq83TS4s3RIs98uAT0u/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MU5UdpLXGeAv3_qMJpzWF7Zd6_7UgqFR/view?usp=sharing"
                 download
                 className="rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700 transition"
             >
