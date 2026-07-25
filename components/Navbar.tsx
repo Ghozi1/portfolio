@@ -1,40 +1,70 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menus = [
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
+  ];
+
   return (
-    <nav className="fixed top-0 w-full z-50 bg-slate-900/70 backdrop-blur-md border-b border-slate-800">
-      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-
-        <h1 className="text-xl font-bold text-white">
+    <nav className="fixed top-0 z-50 w-full border-b border-slate-800 bg-slate-900/70 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <a
+          href="/"
+          className="text-xl font-bold text-white transition hover:text-blue-400"
+        >
           Ghozi.dev
-        </h1>
+        </a>
 
-        <ul className="flex gap-8 text-slate-300">
-
-          <li>
-            <a href="#about" className="hover:text-blue-400 transition">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="#skills" className="hover:text-blue-400 transition">
-              Skills
-            </a>
-          </li>
-
-          <li>
-            <a href="#projects" className="hover:text-blue-400 transition">
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a href="#contact" className="hover:text-blue-400 transition">
-              Contact
-            </a>
-          </li>
-
+        {/* Desktop Menu */}
+        <ul className="hidden items-center gap-8 text-slate-300 md:flex">
+          {menus.map((menu) => (
+            <li key={menu.name}>
+              <a
+                href={menu.href}
+                className="transition hover:text-blue-400"
+              >
+                {menu.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
+        {/* Mobile Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-2xl text-white md:hidden"
+        >
+          {isOpen ? "✕" : "☰"}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`overflow-hidden bg-slate-900 transition-all duration-300 md:hidden ${
+          isOpen ? "max-h-96 border-t border-slate-800" : "max-h-0"
+        }`}
+      >
+        <ul className="flex flex-col px-6 py-4">
+          {menus.map((menu) => (
+            <li key={menu.name}>
+              <a
+                href={menu.href}
+                onClick={() => setIsOpen(false)}
+                className="block rounded-lg py-3 text-slate-300 transition hover:bg-slate-800 hover:text-blue-400"
+              >
+                {menu.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
