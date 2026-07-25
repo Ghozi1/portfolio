@@ -62,11 +62,12 @@ export default function Hero() {
             Download CV
           </button>
 
-          <button
+          <a
+            href="#projects"
             className="rounded-xl border border-slate-600 px-8 py-3 transition hover:border-blue-500 hover:text-blue-400"
           >
-            GitHub
-          </button>
+            View Projects
+          </a>
 
         </div>
 
