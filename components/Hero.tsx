@@ -56,11 +56,13 @@ export default function Hero() {
 
         <div className="mt-12 flex justify-center gap-5">
 
-          <button
-            className="rounded-xl bg-blue-600 px-8 py-3 font-semibold transition hover:bg-blue-700"
+          <a
+            href="/cv/Muhammad_Ghozi_Al_Ghifari_CV.pdf"
+            download
+            className="inline-flex items-center rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700"
           >
             Download CV
-          </button>
+          </a>
 
           <a
             href="#projects"

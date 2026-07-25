@@ -86,7 +86,8 @@ export default function Contact() {
               </p>
 
               <a
-                href="/cv/Muhammad-Ghozi-Al-Ghifari-CV.pdf"
+                href="/cv/Muhammad-Ghozi-Al-Ghifari-CV.pdf" 
+                download
                 className="mt-8 w-fit rounded-lg bg-blue-600 px-6 py-3 font-medium transition hover:bg-blue-700"
               >
                 Download CV
