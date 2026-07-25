@@ -85,13 +85,24 @@ export default function Contact() {
                 technical skills, and projects.
               </p>
 
-              <a
-                href="/cv/Muhammad-Ghozi-Al-Ghifari-CV.pdf" 
+            <div className="flex gap-4">
+            <a
+                href="/cv/Muhammad_Ghozi_Al_Ghifari_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-blue-500 px-5 py-3 text-blue-400 hover:bg-blue-500 hover:text-white transition"
+            >
+                View CV
+            </a>
+
+            <a
+                href="/cv/Muhammad_Ghozi_Al_Ghifari_CV.pdf"
                 download
-                className="mt-8 w-fit rounded-lg bg-blue-600 px-6 py-3 font-medium transition hover:bg-blue-700"
-              >
+                className="rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700 transition"
+            >
                 Download CV
-              </a>
+            </a>
+            </div>
 
             </div>
 
