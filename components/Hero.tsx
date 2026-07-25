@@ -57,7 +57,7 @@ export default function Hero() {
         <div className="mt-12 flex justify-center gap-5">
 
           <a
-            href="/cv/Muhammad_Ghozi_Al_Ghifari_CV.pdf"
+            href="https://drive.google.com/file/d/1FZG32MqI7yk78Yq83TS4s3RIs98uAT0u/view?usp=sharing"
             download
             className="inline-flex items-center rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700"
           >
